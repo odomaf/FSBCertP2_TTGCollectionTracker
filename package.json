@@ -1,0 +1,22 @@
+{
+  "name": "ttg-collection",
+  "version": "1.0.0",
+  "description": "App to store and retrieve info on personal board game collection",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node seeds/index.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "connect-session-sequelize": "^8.0.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.2.1",
+    "express-handlebars": "^8.0.5",
+    "express-session": "^1.19.0",
+    "handlebars": "^4.7.8",
+    "jest": "^30.2.0",
+    "node": "^25.6.0",
+    "sequelize": "^6.37.7"
+  }
+}
