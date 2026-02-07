@@ -19,6 +19,13 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use(routes);
 
+app.get("/", (req, res) => {
+  res.json({
+    status: "ok",
+    message: "TTG DB server is running 🚀",
+  });
+});
+
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () =>
     console.log(`🌐 Server listening on http://localhost:${PORT}`),
